@@ -2313,6 +2313,11 @@ slice-ansi@^4.0.0:
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
 
+smooth-dnd@^0.12.1:
+  version "0.12.1"
+  resolved "http://registry.npm.xiaojukeji.com/smooth-dnd/download/smooth-dnd-0.12.1.tgz#cdb44c972355659e32770368b29b6a80e0ed96f1"
+  integrity sha1-zbRMlyNVZZ4ydwNosptqgODtlvE=
+
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmmirror.com/source-map-js/download/source-map-js-1.0.1.tgz#a1741c131e3c77d048252adfa24e23b908670caf"
@@ -2667,6 +2672,13 @@ vue3-draggable-resizable@^1.6.1:
   version "1.6.1"
   resolved "https://registry.npmmirror.com/vue3-draggable-resizable/download/vue3-draggable-resizable-1.6.1.tgz#30504ef42444fa2c058f66e8f707b93b078e4723"
   integrity sha1-MFBO9CRE+iwFj2bo9we5OweORyM=
+
+vue3-smooth-dnd@^0.0.2:
+  version "0.0.2"
+  resolved "http://registry.npm.xiaojukeji.com/vue3-smooth-dnd/download/vue3-smooth-dnd-0.0.2.tgz#779c885754466b55930de8bfd0a13adc889782d7"
+  integrity sha1-d5yIV1RGa1WTDei/0KE63IiXgtc=
+  dependencies:
+    smooth-dnd "^0.12.1"
 
 vue@^3.2.16:
   version "3.2.26"

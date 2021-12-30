@@ -38,3 +38,10 @@ export const componentList = [
         children: []
     }
 ]
+
+export const itemList = [
+    { id: 1, data: "Princess Mononoke" },
+    { id: 2, data: "Spirited Away" },
+    { id: 3, data: "My Neighbor Totoro" },
+    { id: 4, data: "Howl's Moving Castle" }
+]

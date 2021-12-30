@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { componentList } from '../../mock/index'
+import { componentList, itemList} from '../../mock/index'
 import { cloneDeep } from 'lodash-es'
 
 interface SketchState {
@@ -12,21 +12,22 @@ export const useSketchStore = defineStore('app', {
         return {
             activeId: null,
             pageSchema: {},
-            componentList: componentList,
+            componentList: itemList,
         }
     },
     getters: {
         sortedList: (state) => {
-            const list = cloneDeep(state.componentList)
-            const relativeList = list.filter((item: any)=> {
-                return item.attrs.style.position === 'relative'
-            })
-            relativeList.reduce((acc: number, cur: any) => {
-                cur.attrs.style.top = acc
-                acc += cur.attrs.style.height
-                return acc
-            }, 0)
-            return relativeList
+            return state.componentList
+            // const list = cloneDeep(state.componentList)
+            // const relativeList = list.filter((item: any)=> {
+            //     return item.attrs.style.position === 'relative'
+            // })
+            // relativeList.reduce((acc: number, cur: any) => {
+            //     cur.attrs.style.top = acc
+            //     acc += cur.attrs.style.height
+            //     return acc
+            // }, 0)
+            // return relativeList
         },
         current: (state) => {
             return state.componentList.find(item => {

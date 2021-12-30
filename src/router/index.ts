@@ -7,7 +7,7 @@ const routes: Array<RouteRecordRaw> = [
         path: '/',
         name: 'Home',
         component:Home,
-        // redirect: '/sketch',
+        redirect: '/sketch',
         meta: {
             title: '',
         },
